@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json.schemastore.org/style-dictionary.json",
+  "name": "Wise UI Primitives",
+  "description": "Primitive (non-semantic) values from Wise Design foundations.",
+  "color": {
+    "brand": {
+      "brightGreen": { "value": "#9FE870" },
+      "forestGreen": { "value": "#163300" }
+    },
+    "secondary": {
+      "brightOrange": { "value": "#FFC091" },
+      "brightYellow": { "value": "#FFEB69" },
+      "brightBlue": { "value": "#A0E1E1" },
+      "brightPink": { "value": "#FFD7EF" },
+      "darkPurple": { "value": "#260A2F" }
+    },
+    "product": {
+      "content": {
+        "primary": { "value": "#0E0F0C" },
+        "secondary": { "value": "#454745" },
+        "tertiary": { "value": "#6A6C6A" },
+        "link": { "value": "#163300" }
+      },
+      "interactive": {
+        "primary": { "value": "#163300" },
+        "accent": { "value": "#9FE870" },
+        "secondary": { "value": "#868685" },
+        "control": { "value": "#163300" }
+      },
+      "background": {
+        "screen": { "value": "#FFFFFF" },
+        "elevated": { "value": "#FFFFFF" },
+        "neutral": { "value": "rgba(22, 51, 0, 0.08)" }
+      },
+      "border": {
+        "neutral": { "value": "rgba(14, 15, 12, 0.12)" }
+      },
+      "sentiment": {
+        "negative": { "value": "#A8200D" }
+      }
+    },
+    "base": {
+      "contrast": { "value": "#FFFFFF" },
+      "dark": { "value": "#121511" }
+    }
+  },
+  "radius": {
+    "base": { "value": "0.625rem" }
+  }
+}
+
