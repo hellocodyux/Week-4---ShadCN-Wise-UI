@@ -40,7 +40,7 @@ const RECENT_TRANSACTIONS = [
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col gap-8 p-6">
+    <div className="mx-auto flex w-full max-w-[976px] flex-1 flex-col gap-8 p-6">
       {/* Total balance + actions */}
       <section className="space-y-4">
         <h2 className="text-sm font-medium text-muted-foreground">Total balance</h2>
@@ -89,12 +89,12 @@ export default function Home() {
           <h2 className="text-lg font-semibold">Transactions</h2>
           <Link
             href="/"
-            className="text-sm font-medium text-primary underline-offset-4 hover:underline"
+            className="text-sm font-medium text-link underline-offset-4 hover:underline"
           >
             See all
           </Link>
         </div>
-        <ul className="divide-y divide-border rounded-lg border bg-card">
+        <ul className="divide-y divide-border rounded-lg bg-card">
           {RECENT_TRANSACTIONS.map((tx) => (
             <li key={tx.id} className="flex items-center gap-4 px-4 py-3">
               <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-muted">

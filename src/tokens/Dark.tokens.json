@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/style-dictionary.json",
+  "name": "Wise UI — Dark",
+  "description": "Semantic tokens for Wise UI (dark mode). Values reference primitives; some are defined as alpha overlays for readable dark surfaces.",
+  "semantic": {
+    "color": {
+      "background": {
+        "screen": { "value": "{color.base.dark}" },
+        "surface": { "value": "rgba(255, 255, 255, 0.04)" },
+        "surface2": { "value": "rgba(255, 255, 255, 0.06)" },
+        "subtle": { "value": "rgba(255, 255, 255, 0.06)" },
+        "accentWash": { "value": "rgba(159, 232, 112, 0.14)" }
+      },
+      "content": {
+        "primary": { "value": "{color.base.contrast}" },
+        "secondary": { "value": "{color.product.interactive.secondary}" }
+      },
+      "border": {
+        "default": { "value": "rgba(255, 255, 255, 0.14)" }
+      },
+      "interactive": {
+        "primary": { "value": "{color.product.interactive.accent}" },
+        "primaryText": { "value": "{color.brand.forestGreen}" }
+      },
+      "sentiment": {
+        "negative": { "value": "{color.product.sentiment.negative}" },
+        "positive": { "value": "{color.brand.brightGreen}" },
+        "warning": { "value": "{color.secondary.brightYellow}" }
+      },
+      "chart": {
+        "1": { "value": "{color.secondary.brightOrange}" },
+        "2": { "value": "{color.secondary.brightBlue}" },
+        "3": { "value": "{color.secondary.brightYellow}" },
+        "4": { "value": "{color.secondary.brightPink}" },
+        "5": { "value": "{color.secondary.darkPurple}" }
+      }
+    }
+  }
+}
+

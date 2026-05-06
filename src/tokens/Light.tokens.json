@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/style-dictionary.json",
+  "name": "Wise UI — Light",
+  "description": "Semantic tokens for Wise UI (light mode). Values reference primitives.",
+  "semantic": {
+    "radius": {
+      "base": { "value": "{radius.base}" }
+    },
+    "color": {
+      "background": {
+        "screen": { "value": "{color.product.background.screen}" },
+        "surface": { "value": "{color.product.background.elevated}" },
+        "surface2": { "value": "{color.product.background.neutral}" },
+        "subtle": { "value": "{color.product.background.neutral}" }
+      },
+      "content": {
+        "primary": { "value": "{color.product.content.primary}" },
+        "secondary": { "value": "{color.product.content.secondary}" },
+        "tertiary": { "value": "{color.product.content.tertiary}" },
+        "link": { "value": "{color.product.content.link}" }
+      },
+      "border": {
+        "default": { "value": "{color.product.border.neutral}" }
+      },
+      "interactive": {
+        "primary": { "value": "{color.product.interactive.primary}" },
+        "primaryText": { "value": "{color.base.contrast}" },
+        "accent": { "value": "{color.product.interactive.accent}" }
+      },
+      "sentiment": {
+        "negative": { "value": "{color.product.sentiment.negative}" },
+        "positive": { "value": "#2F5711" },
+        "warning": { "value": "#EDC843" }
+      },
+      "chart": {
+        "1": { "value": "{color.secondary.brightOrange}" },
+        "2": { "value": "{color.secondary.brightBlue}" },
+        "3": { "value": "{color.secondary.brightYellow}" },
+        "4": { "value": "{color.secondary.brightPink}" },
+        "5": { "value": "{color.secondary.darkPurple}" }
+      }
+    }
+  }
+}
+
