@@ -5,22 +5,24 @@
   "semantic": {
     "color": {
       "background": {
-        "screen": { "value": "{color.base.dark}" },
-        "surface": { "value": "rgba(255, 255, 255, 0.04)" },
-        "surface2": { "value": "rgba(255, 255, 255, 0.06)" },
-        "subtle": { "value": "rgba(255, 255, 255, 0.06)" },
+        "screen": { "value": "{color.grey.600}" },
+        "surface": { "value": "{color.grey.500}" },
+        "surface2": { "value": "{color.grey.500}" },
+        "subtle": { "value": "{color.grey.500}" },
         "accentWash": { "value": "rgba(159, 232, 112, 0.14)" }
       },
       "content": {
-        "primary": { "value": "{color.base.contrast}" },
-        "secondary": { "value": "{color.product.interactive.secondary}" }
+        "primary": { "value": "{color.grey.100}" },
+        "secondary": { "value": "{color.grey.300}" },
+        "tertiary": { "value": "{color.grey.400}" }
       },
       "border": {
-        "default": { "value": "rgba(255, 255, 255, 0.14)" }
+        "default": { "value": "{color.grey.500}" }
       },
       "interactive": {
         "primary": { "value": "{color.product.interactive.accent}" },
-        "primaryText": { "value": "{color.brand.forestGreen}" }
+        "primaryText": { "value": "{color.brand.green.700}" },
+        "secondaryText": { "value": "{color.brand.green.500}" }
       },
       "sentiment": {
         "negative": { "value": "{color.product.sentiment.negative}" },

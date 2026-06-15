@@ -23,8 +23,10 @@
         "default": { "value": "{color.product.border.neutral}" }
       },
       "interactive": {
-        "primary": { "value": "{color.product.interactive.primary}" },
-        "primaryText": { "value": "{color.base.contrast}" },
+        "primary": { "value": "{color.product.interactive.accent}" },
+        "primaryText": { "value": "{color.brand.green.700}" },
+        "secondary": { "value": "{color.brand.green.100}" },
+        "secondaryText": { "value": "{color.brand.green.700}" },
         "accent": { "value": "{color.product.interactive.accent}" }
       },
       "sentiment": {

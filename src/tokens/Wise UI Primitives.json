@@ -5,7 +5,12 @@
   "color": {
     "brand": {
       "brightGreen": { "value": "#9FE870" },
-      "forestGreen": { "value": "#163300" }
+      "forestGreen": { "value": "#163300" },
+      "green": {
+        "100": { "value": "#D6F9CE" },
+        "500": { "value": "#9EE770" },
+        "700": { "value": "#163300" }
+      }
     },
     "secondary": {
       "brightOrange": { "value": "#FFC091" },
@@ -14,11 +19,20 @@
       "brightPink": { "value": "#FFD7EF" },
       "darkPurple": { "value": "#260A2F" }
     },
+    "grey": {
+      "100": { "value": "#FFFFFF" },
+      "200": { "value": "#ECEDE8" },
+      "300": { "value": "#D7D8D2" },
+      "400": { "value": "#5A5E58" },
+      "500": { "value": "#2F322D" },
+      "600": { "value": "#0B0C0A" },
+      "700": { "value": "#0B0C0A" }
+    },
     "product": {
       "content": {
-        "primary": { "value": "#0E0F0C" },
-        "secondary": { "value": "#454745" },
-        "tertiary": { "value": "#6A6C6A" },
+        "primary": { "value": "{color.grey.600}" },
+        "secondary": { "value": "{color.grey.500}" },
+        "tertiary": { "value": "{color.grey.400}" },
         "link": { "value": "#163300" }
       },
       "interactive": {
@@ -28,20 +42,20 @@
         "control": { "value": "#163300" }
       },
       "background": {
-        "screen": { "value": "#FFFFFF" },
-        "elevated": { "value": "#FFFFFF" },
-        "neutral": { "value": "rgba(22, 51, 0, 0.08)" }
+        "screen": { "value": "{color.grey.100}" },
+        "elevated": { "value": "{color.grey.100}" },
+        "neutral": { "value": "{color.grey.200}" }
       },
       "border": {
-        "neutral": { "value": "rgba(14, 15, 12, 0.12)" }
+        "neutral": { "value": "{color.grey.300}" }
       },
       "sentiment": {
         "negative": { "value": "#A8200D" }
       }
     },
     "base": {
-      "contrast": { "value": "#FFFFFF" },
-      "dark": { "value": "#121511" }
+      "contrast": { "value": "{color.grey.100}" },
+      "dark": { "value": "{color.grey.600}" }
     }
   },
   "radius": {

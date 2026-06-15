@@ -45,6 +45,13 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-grey-100: var(--wise-grey-100);
+  --color-grey-200: var(--wise-grey-200);
+  --color-grey-300: var(--wise-grey-300);
+  --color-grey-400: var(--wise-grey-400);
+  --color-grey-500: var(--wise-grey-500);
+  --color-grey-600: var(--wise-grey-600);
+  --color-grey-700: var(--wise-grey-700);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -72,6 +79,9 @@
      --------------------------- */
   --wise-brand-bright-green: #9fe870;
   --wise-brand-forest-green: #163300;
+  --wise-brand-green-100: #d6f9ce;
+  --wise-brand-green-500: #9ee770;
+  --wise-brand-green-700: var(--wise-brand-forest-green);
 
   --wise-secondary-bright-orange: #ffc091;
   --wise-secondary-bright-yellow: #ffeb69;
@@ -79,26 +89,36 @@
   --wise-secondary-bright-pink: #ffd7ef;
   --wise-secondary-dark-purple: #260a2f;
 
-  --wise-product-content-primary: #0e0f0c;
-  --wise-product-content-secondary: #454745;
-  --wise-product-content-tertiary: #6a6c6a;
+  /* Grey scale (100 = lightest → 700 = darkest) */
+  --wise-grey-100: #ffffff;
+  --wise-grey-200: #ecede8;
+  --wise-grey-300: #d7d8d2;
+  --wise-grey-400: #5a5e58;
+  --wise-grey-500: #2f322d;
+  --wise-grey-600: #0b0c0a;
+  --wise-grey-700: #0b0c0a;
+
+  /* Product neutrals (derived from grey primitives) */
+  --wise-product-content-primary: var(--wise-grey-600);
+  --wise-product-content-secondary: var(--wise-grey-500);
+  --wise-product-content-tertiary: var(--wise-grey-400);
   --wise-product-content-link: var(--wise-brand-forest-green);
 
   --wise-product-interactive-primary: var(--wise-brand-forest-green);
   --wise-product-interactive-accent: var(--wise-brand-bright-green);
-  --wise-product-interactive-secondary: #868685;
+  --wise-product-interactive-secondary: var(--wise-grey-400);
   --wise-product-interactive-control: var(--wise-brand-forest-green);
 
-  --wise-product-background-screen: #ffffff;
-  --wise-product-background-elevated: #ffffff;
-  --wise-product-background-neutral: rgba(22, 51, 0, 0.08); /* #16330014 */
+  --wise-product-background-screen: var(--wise-grey-100);
+  --wise-product-background-elevated: var(--wise-grey-100);
+  --wise-product-background-neutral: var(--wise-grey-200);
 
-  --wise-product-border-neutral: rgba(14, 15, 12, 0.12); /* #0E0F0C1F */
+  --wise-product-border-neutral: var(--wise-grey-300);
 
   --wise-product-sentiment-negative: #a8200d;
 
-  --wise-base-contrast: #ffffff;
-  --wise-base-dark: #121511;
+  --wise-base-contrast: var(--wise-grey-100);
+  --wise-base-dark: var(--wise-grey-600);
 
   /* ---------------------------
      Semantics (Light mode)
@@ -119,19 +139,20 @@
   --positive: #2f5711;
   --warning: #edc843;
 
-  --card: var(--wise-product-background-elevated);
+  /* Cards sit on the white screen, so use grey-200 for separation */
+  --card: var(--wise-grey-200);
   --card-foreground: var(--wise-product-content-primary);
 
   --popover: var(--wise-product-background-elevated);
   --popover-foreground: var(--wise-product-content-primary);
 
-  /* Primary actions in product UI (Wise uses Forest Green) */
-  --primary: var(--wise-product-interactive-primary);
-  --primary-foreground: var(--wise-base-contrast);
+  /* Primary actions in product UI (Bright Green fill, Forest Green text) */
+  --primary: var(--wise-product-interactive-accent);
+  --primary-foreground: var(--wise-brand-green-700);
 
-  /* Subtle surfaces and hovers */
-  --secondary: var(--wise-product-background-neutral);
-  --secondary-foreground: var(--wise-product-content-primary);
+  /* Secondary buttons (soft green fill, forest green text) */
+  --secondary: var(--wise-brand-green-100);
+  --secondary-foreground: var(--wise-brand-green-700);
 
   --muted: var(--wise-product-background-neutral);
   --muted-foreground: var(--wise-product-content-tertiary);
@@ -157,50 +178,50 @@
   --sidebar: var(--wise-product-background-screen);
   --sidebar-foreground: var(--wise-product-content-primary);
   --sidebar-primary: var(--wise-product-interactive-primary);
-  --sidebar-primary-foreground: var(--wise-base-contrast);
+  --sidebar-primary-foreground: var(--wise-brand-green-700);
   --sidebar-accent: var(--wise-product-background-neutral);
   --sidebar-accent-foreground: var(--wise-product-content-primary);
-  --sidebar-border: var(--wise-product-border-neutral);
+  --sidebar-border: var(--background);
   --sidebar-ring: var(--wise-product-interactive-control);
 }
 
 /* Dark mode semantics (add class "dark" to <html>) */
 .dark {
-  --background: var(--wise-base-dark);
-  --foreground: var(--wise-base-contrast);
+  --background: var(--wise-grey-600);
+  --foreground: var(--wise-grey-100);
 
-  --surface: rgba(255, 255, 255, 0.04);
-  --surface-2: rgba(255, 255, 255, 0.06);
-  --text-secondary: rgba(255, 255, 255, 0.78);
-  --text-tertiary: rgba(255, 255, 255, 0.62);
+  --surface: var(--wise-grey-500);
+  --surface-2: var(--wise-grey-500);
+  --text-secondary: var(--wise-grey-300);
+  --text-tertiary: var(--wise-grey-400);
   --link: var(--wise-product-interactive-accent);
 
   --positive: #9fe870;
   --warning: #ffeb69;
 
-  --card: rgba(255, 255, 255, 0.04);
-  --card-foreground: var(--wise-base-contrast);
+  --card: var(--wise-grey-500);
+  --card-foreground: var(--wise-grey-100);
 
-  --popover: rgba(255, 255, 255, 0.06);
-  --popover-foreground: var(--wise-base-contrast);
+  --popover: var(--wise-grey-500);
+  --popover-foreground: var(--wise-grey-100);
 
   /* In dark mode, Bright Green reads best as the primary fill */
   --primary: var(--wise-product-interactive-accent);
-  --primary-foreground: var(--wise-brand-forest-green);
+  --primary-foreground: var(--wise-brand-green-700);
 
-  --secondary: rgba(255, 255, 255, 0.06);
-  --secondary-foreground: var(--wise-base-contrast);
+  --secondary: var(--wise-grey-500);
+  --secondary-foreground: var(--wise-brand-green-500);
 
-  --muted: rgba(255, 255, 255, 0.06);
-  --muted-foreground: var(--wise-product-interactive-secondary);
+  --muted: var(--wise-grey-500);
+  --muted-foreground: var(--wise-grey-300);
 
-  --accent: rgba(159, 232, 112, 0.14);
-  --accent-foreground: var(--wise-base-contrast);
+  --accent: color-mix(in srgb, var(--wise-brand-bright-green) 14%, transparent);
+  --accent-foreground: var(--wise-grey-100);
 
   --destructive: var(--wise-product-sentiment-negative);
 
-  --border: rgba(255, 255, 255, 0.14);
-  --input: rgba(255, 255, 255, 0.18);
+  --border: var(--wise-grey-500);
+  --input: var(--wise-grey-400);
   --ring: var(--wise-product-interactive-accent);
 
   --chart-1: var(--wise-secondary-bright-orange);
@@ -209,13 +230,13 @@
   --chart-4: var(--wise-secondary-bright-pink);
   --chart-5: var(--wise-secondary-dark-purple);
 
-  --sidebar: rgba(255, 255, 255, 0.02);
-  --sidebar-foreground: var(--wise-base-contrast);
+  --sidebar: var(--background);
+  --sidebar-foreground: var(--wise-grey-100);
   --sidebar-primary: var(--wise-product-interactive-accent);
-  --sidebar-primary-foreground: var(--wise-brand-forest-green);
-  --sidebar-accent: rgba(255, 255, 255, 0.06);
-  --sidebar-accent-foreground: var(--wise-base-contrast);
-  --sidebar-border: rgba(255, 255, 255, 0.14);
+  --sidebar-primary-foreground: var(--wise-brand-green-700);
+  --sidebar-accent: var(--wise-grey-500);
+  --sidebar-accent-foreground: var(--wise-grey-100);
+  --sidebar-border: var(--background);
   --sidebar-ring: var(--wise-product-interactive-accent);
 }
 
